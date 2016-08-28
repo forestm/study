@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.mengls.study</groupId>
+    <artifactId>study-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>study-web</module>
+        <module>study-spider</module>
+        <module>study-storage</module>
+        <module>study-search</module>
+        <module>study-compute</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <name>study-parent</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!--study-spider-->
+        <tika.version>1.13</tika.version>
+
+        <!--study-search-->
+        <solr.version>6.1.0</solr.version>
+        <elasticsearch.version>2.3.5</elasticsearch.version>
+
+        <!--study-storage-->
+        <hadoop.core.version>1.2.1</hadoop.core.version>
+        <hadoop.version>2.7.2</hadoop.version>
+        <hadoop.hbase.version>1.2.2</hadoop.hbase.version>
+        <alluxio.version>1.2.0</alluxio.version>
+        <mysql.version>5.1.38</mysql.version>
+
+        <mybatis.version>3.4.0</mybatis.version>
+
+        <!--study-storage-->
+        <scala.binary.version>2.11</scala.binary.version>
+        <spark.version>2.0.0</spark.version>
+
+        <!--study-web-->
+
+
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
