@@ -36,7 +36,7 @@
 
         <mybatis.version>3.4.0</mybatis.version>
 
-        <!--study-storage-->
+        <!--study-compute-->
         <scala.binary.version>2.11</scala.binary.version>
         <spark.version>2.0.0</spark.version>
 
@@ -55,4 +55,16 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
